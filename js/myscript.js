@@ -85,51 +85,65 @@ if (InputOne === alwaysNow && Newsum === alwaysNow ){
     console.log("false");
 };
 
+// Test 5
+// Write a function that takes in three numbers. These numbers represent the lengths of the sides of a triangle. The function should return the area of a triangle.
+    let b = 4;
+    let h = 4;
+
+    let area = (b*h)/2;
+    console.log(area)
+
+    // TASK 6
+    // White a function that takes in three numbers and returns the maximum number. Do this without using any builtin methods. Write your own logic from scratch.
+
+    const Newarray = [375,5000,150]
+
+    Newarray.sort()
+    
+    Newarray.sort((a,b) => a-b)
+    
+    const highest = Newarray[Newarray.length-1]
+    console.log(highest);
+    
+
 // Task 7
+// Write a function that takes in a number representing the temperature in Celsius and returns the temperature in Fahrenheit. Write another function that does the opposite (Fereignheit to Celsius)
 function Ftshe(celsius) 
 {
-  let fTemp = celsius;
-  let fToFahr = fTemp * 9 / 5 + 32;
-  let message = fTemp+'\xB0C is ' + fToFahr + ' \xB0F.';
+  let fTem = celsius;
+  let fToFahr = fTem * 9 / 5 + 32;
+  let message = fTem+'\xB0C is ' + fToFahr + ' \xB0F.';
     console.log(message);
 }
 
 function fDim(fahrenheit) 
 {
-  let dTemp = fahrenheit;
-  let dToCel = (dTemp - 32) * 5 / 9;
-  let message = dTemp+'\xB0F is ' + dToCel + '\xB0C.';
+  let dTem = fahrenheit;
+  let dToCel = (dTem - 32) * 5 / 9;
+  let message = dTem+'\xB0F is ' + dToCel + '\xB0C.';
     console.log(message);
 } 
-Ftshe(60);
- fDim(145);
+Ftshe(40);
+ fDim(45);
+ 
 // Task 8
+// Make a function to convert any number into hours and minutes. (For example, 71 will become “1 hour, 11 minutes”; 133 will become “2 hours, 13 minutes”.)
 function timeConvertt(n) {
-    let num = 71;
+    let num = 100;
     let hours = (num / 60);
-    let rhours = Math.floor(hours);
-    let minutes = (hours - rhours) * 60;
-    let rminutes = Math.round(minutes);
-    return num + " minutes = " + rhours + " hour(s) and " + rminutes + " minute(s).";
+    let Thours = Math.floor(hours);
+    let minutes = (hours - Thours) * 60;
+    let Tminutes = Math.round(minutes);
+    return num + " minutes = " + Thours + " hour(s) and " + Tminutes + " minute(s).";
     }
     
-    console.log(timeConvertt(200));
-
-    // Task 8
-// function timeConverter(n) {
-//     var number = 133;
-//     var hours = (number / 60);
-//     var remainhours = Math.floor(hours);
-//     var minutes = (hours - remainhours) * 60;
-//     var remainingminutes = Math.round(minutes);
-//     return number + " minutes = " + remainhours + " hour(s) and " + remainingminutes + " minute(s).";
-//     }
-    
-//     console.log(timeConverter(200));
-
+    console.log(timeConvertt());
 
     // Task 9
-    let multiples = function (n) {
+    // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+        // Find the sum of all the multiples of 3 or 5 below 1000.
+
+    let natural  = function (n) {
         let sum = 0;
         for (let i = 1; i < n; i++) {
             if ((i % 3 == 0) || (i % 5 == 0)) {
@@ -140,6 +154,34 @@ function timeConvertt(n) {
     };
     
     
-    multiples(1000);
-    
-    console.log(sum);
+    natural (10);
+
+// Task 10
+// Write a function that takes in a string and then prints out all the vowels in the string. Make sure it can deal with capital letters and small letters.
+
+let vowels = "aeiouAEIOU";
+let string = "HellO challenGe";
+
+let array = "";
+for (i = 0; i < string.length; i++){
+    if(vowels.indexOf(string[i]) >= 0) array += string[i];
+
+}
+console.log(array);
+
+// Task 11
+// Make a function that takes two strings as input, and outputs the common characters/letters that they share. (For example, Input: ‘house’, ‘computers’ . Output: ‘Common letters: o, u, e, s’)
+
+function findCommonLetter(string1, string2) {
+    let string1ToArray = Array.from(string1);
+    let string2ToArray = Array.from(string2);
+
+let commonLetters = string2ToArray.filter(value => {
+    return string1ToArray.indexOf(value) != -1;
+});
+
+console.log(`Common letters: ${commonLetters}`);
+}
+
+findCommonLetter('Tshepo', 'Makgetsi');
+
