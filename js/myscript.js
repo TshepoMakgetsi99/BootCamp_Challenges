@@ -159,7 +159,7 @@ function timeConvertt(n) {
 // Write a function that takes in a string and then prints out all the vowels in the string. Make sure it can deal with capital letters and small letters.
 
 let vowels = "aeiouAEIOU";
-let string = "HellO challenGe";
+let string = "JavaScript Pretteir";
 
 let array = "";
 for (i = 0; i < string.length; i++){
