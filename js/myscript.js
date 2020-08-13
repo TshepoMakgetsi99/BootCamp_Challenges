@@ -104,9 +104,6 @@ function max(input) {
 
     console.log(max([10,23,65,3]));
 
-
-    
-
 // Task 7
 // Write a function that takes in a number representing the temperature in Celsius and returns the temperature in Fahrenheit. Write another function that does the opposite (Fereignheit to Celsius)
 function Ftshe(celsius) 
@@ -141,10 +138,6 @@ function timeConvertt(n) {
     
     console.log(timeConvertt());
 
-
-
-
-
     // Task 9
     // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
         // Find the sum of all the multiples of 3 or 5 below 1000.
@@ -157,19 +150,23 @@ function timeConvertt(n) {
             }
         }
         console.log(sum);
+
     // Task 10
     // Write a function that takes in a string and then prints out all the vowels in the string. Make sure it can deal with capital letters and small letters.
-    let vowels = "aeiouAEIOU";
-    let string = "JavaScript Pretteir";
+  function get(string3, string4) {
     
-    let array = "";
-    for (i = 0; i < string.length; i++){
-        if(vowels.indexOf(string[i]) >= 0) array += string[i];
-    
+    let string3ToArray = Array.from(string3);
+    let string4ToArray = Array.from(string4);
+
+    let vowels = string4ToArray.filter(value => {
+    return string3ToArray.indexOf(value) != -1;
+    });
+
+    console.log(`vowels: ${vowels}`);
     }
-    console.log(array);
 
 
+    get('TshepoEnestinahMakgetsi', 'aeiouAEIOU');
 
 // Task 11
 // Make a function that takes two strings as input, and outputs the common characters/letters that they share. (For example, Input: ‘house’, ‘computers’ . Output: ‘Common letters: o, u, e, s’)
@@ -186,5 +183,7 @@ console.log(`Common letters: ${common}`);
 }
 
 find('Tshepo', 'Makgetsi');
+
+
 
 
