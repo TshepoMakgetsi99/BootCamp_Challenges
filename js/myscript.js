@@ -102,7 +102,7 @@ function max(input) {
     return Math.max.apply(null, input);
    }
 
-    console.log(max([10,23,65,3]));
+    console.log(max([10,23,65]));
 
 // Task 7
 // Write a function that takes in a number representing the temperature in Celsius and returns the temperature in Fahrenheit. Write another function that does the opposite (Fereignheit to Celsius)
