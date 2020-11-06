@@ -182,7 +182,7 @@ let common = string2ToArray.filter(value => {
 console.log(`Common letters: ${common}`);
 }
 
-find('Tshepo', 'Makgetsi');
+find('Enestinah', 'Makgetsi');
 
 
 
