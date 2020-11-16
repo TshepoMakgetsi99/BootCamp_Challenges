@@ -1,14 +1,13 @@
 
- // Task 9
-    // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-        // Find the sum of all the multiples of 3 or 5 below 1000.
-        let sum = 0;
-        for (let v = 0; v < 1000; v++)
-        {
-            if (v % 3 === 0 || v % 5 === 0)
-            {
-               sum += v;
-            }
+  // Task 10
+    // Write a function that takes in a string and then prints out all the vowels in the string. Make sure it can deal with capital letters and small letters.
+    function getVowels(word) {
+
+        let vowels = /[aeiouAEIOU]/g;
+    //global search with regular expression for vowels
+        console.log(word.match(vowels));
         }
-        console.log(sum);
+    
+    
+        getVowels('TshepoEnestinahMakgetsi');
 
