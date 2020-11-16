@@ -1,30 +1,22 @@
-// TASK 1 Answer...........................................................................
+ TaskTwo
+// TASK 2 Question........................................................................
 
-// x = 0
-// y = 1
-// Print the value of x
-// Print the value of y
-// x = x + 3
-// y = y + x
-// Print the value of x
-// Print the value of y
+// x = 1 + 1 * 2
+// y = (1 + 1) * 2
+// z = 1 + ( 1 * 2 )
+// a =  1 + 1 * 2 / 2
+// b =  (1 + 1 * 2 ) /  2
 
 
-// pseudocode
-// a notation resembling a simplified programming language, used in program design.
 
-// part 1
+let ltx = 1 + 1 * 2;
+let lty = (1 + 1) * 2;
+let ltz = 1 + ( 1 * 2 );
+let lta =  1 + 1 * 2 / 2;
+let ltb =  (1 + 1 * 2 ) /  2;
 
-let x = 0;
-let y = 1;
-
-console.log(x);
-console.log(y);
-
-// Part 2
-
-let X = x + 3;
-let Y = y + X;
-
-console.log(X);
-console.log(Y);
+console.log(ltx);
+console.log(lty);
+console.log(ltz);
+console.log(lta);
+console.log(ltb);
