@@ -1,21 +1,11 @@
 
-// Task 7
-// Write a function that takes in a number representing the temperature in Celsius and returns the temperature in Fahrenheit. Write another function that does the opposite (Fereignheit to Celsius)
-function Ftshe(celsius) 
-{
-  let fTem = celsius;
-  let fToFahr = fTem * 9 / 5 + 32;
-  let message = fTem+'\xB0C is ' + fToFahr + ' \xB0F.';
-    console.log(message);
+// Task 8
+// Make a function to convert any number into hours and minutes. (For example, 71 will become “1 hour, 11 minutes”; 133 will become “2 hours, 13 minutes”.)
+function timeConvert(n){
+    let hours = Math.floor(n / 60);
+    let minutes = n % 60;
+    return n + " = " + hours + " hour(s) and " + minutes + " minute(s).";
 }
+        console.log(timeConvert(71));
 
-function fDim(fahrenheit) 
-{
-  let dTem = fahrenheit;
-  let dToCel = (dTem - 32) * 5 / 9;
-  let message = dTem+'\xB0F is ' + dToCel + '\xB0C.';
-    console.log(message);
-} 
-Ftshe(40);
- fDim(45);
 
