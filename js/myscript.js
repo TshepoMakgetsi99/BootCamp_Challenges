@@ -12,4 +12,3 @@
        }
     
         console.log(max(2,45,3));
-    
