@@ -1,11 +1,14 @@
 
-// Task 8
-// Make a function to convert any number into hours and minutes. (For example, 71 will become “1 hour, 11 minutes”; 133 will become “2 hours, 13 minutes”.)
-function timeConvert(n){
-    let hours = Math.floor(n / 60);
-    let minutes = n % 60;
-    return n + " = " + hours + " hour(s) and " + minutes + " minute(s).";
-}
-        console.log(timeConvert(71));
-
+ // Task 9
+    // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+        // Find the sum of all the multiples of 3 or 5 below 1000.
+        let sum = 0;
+        for (let v = 0; v < 1000; v++)
+        {
+            if (v % 3 === 0 || v % 5 === 0)
+            {
+               sum += v;
+            }
+        }
+        console.log(sum);
 
