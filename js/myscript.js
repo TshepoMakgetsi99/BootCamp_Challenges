@@ -1,13 +1,14 @@
 
-// Task 5
-// Write a function that takes in three numbers. These numbers represent the lengths of the sides of a triangle. The function should return the area of a triangle.
-function TriangleArea(side1, side2, side3) {
+    // TASK 6
+    // White a function that takes in three numbers and returns the maximum number. Do this without using any builtin methods. Write your own logic from scratch.
 
-    let s = (side1+side2+side3)/2;
-    let area = Math.sqrt(s*(s - side1)*(s-side2)*(s-side3));
+        // Here we say return rather than console.log because we do not just want the value
+        // to be displayed we want to store it so that we can use it later.
+    // So now when we call this it won’t display on the console
 
-    console.log(area);
-
-}
-        TriangleArea(2,4,4);
-
+    function max(number1, number2, number3) {
+      
+        return Math.max(number1, number2, number3);
+       }
+    
+        console.log(max(2,45,3));
