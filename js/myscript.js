@@ -1,14 +1,21 @@
 
-    // TASK 6
-    // White a function that takes in three numbers and returns the maximum number. Do this without using any builtin methods. Write your own logic from scratch.
+// Task 7
+// Write a function that takes in a number representing the temperature in Celsius and returns the temperature in Fahrenheit. Write another function that does the opposite (Fereignheit to Celsius)
+function Ftshe(celsius) 
+{
+  let fTem = celsius;
+  let fToFahr = fTem * 9 / 5 + 32;
+  let message = fTem+'\xB0C is ' + fToFahr + ' \xB0F.';
+    console.log(message);
+}
 
-        // Here we say return rather than console.log because we do not just want the value
-        // to be displayed we want to store it so that we can use it later.
-    // So now when we call this it won’t display on the console
+function fDim(fahrenheit) 
+{
+  let dTem = fahrenheit;
+  let dToCel = (dTem - 32) * 5 / 9;
+  let message = dTem+'\xB0F is ' + dToCel + '\xB0C.';
+    console.log(message);
+} 
+Ftshe(40);
+ fDim(45);
 
-    function max(number1, number2, number3) {
-      
-        return Math.max(number1, number2, number3);
-       }
-    
-        console.log(max(2,45,3));
