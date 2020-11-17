@@ -1,24 +1,19 @@
+// Task 7
+// Write a function that takes in a number representing the temperature in Celsius and returns the temperature in Fahrenheit. Write another function that does the opposite (Fereignheit to Celsius)
+function cTshe(celsius) 
+{
+  const cTemp = celsius;
+  const cToFahr = cTemp * 9 / 5 + 32;
+  const message = ` ${cToFahr} \xB0F.`;
+    console.log(message);
+}
 
-    // TASK 6
-    // White a function that takes in three numbers and returns the maximum number. Do this without using any builtin methods. Write your own logic from scratch.
-
-    function max_number(num1, num2, num3) 
-    {
-     max_num = 0;
-     if (num1 > num2)
-     {
-       max_num = num1;
-     } else
-     {
-       max_num = num2;
-     }
-     if (num3 > max_num) 
-     {
-       max_num = num3;
-     }
-     return max_num;
-   }
-   
-   console.log(max_number(10, 1999,7));
-		
-    
+function fTha(fahrenheit) 
+{
+  const fTemperature = fahrenheit;
+  const fToCelsius = (fTemperature - 32) * 5 / 9;
+  const message = ` ${fToCelsius}\xB0C.`;
+    console.log(message);
+} 
+cTshe(80);
+fTha(55);
